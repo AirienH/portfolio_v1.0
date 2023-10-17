@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    background-color: #58806e;
+}
+
+.nav-links ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+nav .fa-sharp {
+    display: none;
+}
+.nav-links li a{
+    display: flex;
+    text-decoration: none;
+    color: white; 
+    margin: 0 14px;
+}
+.main-page {
+    padding: 2%;
+}
+.row{
+    display: flex;
+}
+.col-1 {
+    flex-basis: 50%;
+}
+.col-1 h1 {
+    margin-top: 200px;
+    color: #58806e;
+}
+.col-1 h2{
+    color: #62686F;
+}
+
+.col-2 img {
+    width: 500px; 
+}
+.skills{
+    display: flex;
+}
+.skills p{
+    margin: 50px 14px;
+}
+.skills svg{
+    width: 20px;
+    cursor: pointer;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1%;
+    color: #58806e;
+}
+.footerline{
+    width: 100%;
+    height: 2px;
+    background-color:#58806e;
+}
+.socialmedia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socialmedia i{
+    font-size: 30px;
+    color: #58806e;
+    margin: 20px;
+}
+.contact{
+    width: 100%;
+    height: 100vh;
+    color: #62686F;
+}
+.contact h1{
+    margin: 50px 0;
+    color: #62686F;
+}
+.contact-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-container form{
+    border-radius: 10px;
+    border: 1px solid #58806e;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #c7eada;
+    gap: 10px;
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.contact-container form input{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 8px;
+    width: 300px;
+}
+.contact-container textarea{
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 300px;
+}
+.contact-container button{
+    border: none;
+    padding: 10px 15px;
+    background-color: #58806e;
+    color: white;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+@media only screen and (max-width: 600px) {
+    nav .nav-links{
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: #58806e;
+        width: 200px;
+        height: 100vh;
+        transition: 0.5s;
+    }
+    nav .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px;
+    }
+    nav .nav-links ul li{
+        margin-top: 15px;
+    }
+    nav .fa-sharp{
+        color: #62686F;
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+        margin: 15px;
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Airien's Portfolio</title>
+    <script src="https://kit.fontawesome.com/06ab47afa7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-sharp fa-solid fa-xmark" onclick="navClose()"></i>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+                </div>
+            </div>
+            <i class="fa-solid fa-bars" onclick="navOpen()"></i>
+        </nav>
+        <div class="main-page">
+            <div class="mainpage-container">
+                <div class="row">
+                    <div class="col-1">
+                        <h1>Hi, I'm Airien Hacla!</h1> 
+                        <h2>I am currently studying Bachelor of Science in Computer Engineering at Pangasinan State University.</h2>
+                        <h2>I have experienced writing different programs mainly using C++, Java, and Python.</h2>
+                    </div>
+                    <div class="col-2">
+                        <img src="./img/a.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <h4>Keep in Touch!📞</h4>
+                <div class="socialmedia">
+                    <a href="https://www.facebook.com/neiria.alcah"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/airienxx"><i class="fa-brands fa-instagram"></i></a>   
+                </div>
+            </div>
+            <div class="footerline"></div>
+            <small></small>
+        </footer> 
+        <!-- JAVASCRIPT -->
+        <script>
+            const navLinks = document.getElementById("navLinks")
+            function navClose(){
+                navLinks.style.right = "-200px"
+            }
+            function navOpen(){
+                navLinks.style.right = "0"
+            }
+
+        </script>   
+    </main>
+</body>
+</html>
